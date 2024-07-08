@@ -8,7 +8,7 @@ def home(request):
 
 
 def result(request):
-    var1 = int(request.GET['num1'])
-    var2 = int(request.GET['num2'])
+    var1 = int(request.POST['num1'])
+    var2 = int(request.POST['num2'])
     result = var1 + var2
     return render(request, 'result.html', {'result':result})

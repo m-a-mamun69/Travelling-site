@@ -4,8 +4,8 @@
 {% block content %}
 
 <center><h1>Hello World!!!...This is {{name}}</h1></center><br>
-<form action="add" method="get">
-    <!-- {% csrf_token %} -->
+<form action="add" method="post">
+    {% csrf_token %}
     Enter 1st Number:  <input type="text" name="num1"><br><br>
     Enter 2nd Number:  <input type="text" name="num2"><br>
     <input type="submit" value="Click Here">
